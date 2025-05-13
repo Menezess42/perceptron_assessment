@@ -114,6 +114,25 @@ class PerceptronNetwork:
 
         return a
 
+    def divid_data(self,
+                   perTrain: float = 0.7,
+                   perTest: float = 0.15,
+                   perVal: float = 0.0, data=[]) -> tuple:
+
+        if perVal == 0.0:
+            perVal = 1 - (perTrain+perTest)
+        data_size = len(data)
+        test_size = int(data_size*perTest)
+        val_size = int(data_size*perVal)
+        train_size = int(data_size*perTrain)
+        test = data[:test_size]
+        val = data[test_size:test_size+val_size]
+        train = data[test_size+val_size:]
+        
+        return train, val, test
+
+
+        return 0,0,0
     def main(self, file_path: str):
         '''
         file_path: Caminho dos dados
@@ -122,6 +141,10 @@ class PerceptronNetwork:
         data = self.from_raw_to_matrix(raw_data)
         hoted_data, unique_cats = self.one_hotEncoder(data)
         shuffled_data = self.shuffle(hoted_data)
+        print(len(shuffled_data))
+        train, val, test = self.divid_data(perTrain=0.7, perTest=0.15, data=shuffled_data)
+
+        
 
 
 def main():
