@@ -2,3 +2,4 @@
 *.zip
 DataSet/
 .direnv/
+__pycache__/

@@ -128,11 +128,8 @@ class PerceptronNetwork:
         test = data[:test_size]
         val = data[test_size:test_size+val_size]
         train = data[test_size+val_size:]
-        
         return train, val, test
 
-
-        return 0,0,0
     def main(self, file_path: str):
         '''
         file_path: Caminho dos dados
