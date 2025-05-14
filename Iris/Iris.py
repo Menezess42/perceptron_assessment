@@ -193,11 +193,13 @@ class PerceptronNetwork:
                 y_pred = self.forward(x)
 
                 # Perda (entropia cruzada)
-                loss = -np.sum(y_true*np.log(y_pred+1e-15))
+                loss = self.cross_entropy(y_true, y_pred)
+                #loss = -np.sum(y_true*np.log(y_pred+1e-15))
                 total_loss += loss
 
                 # Gradiente da softmax com entropia cruzada
-                grad = y_pred - y_true # shape: [numberOfPerceptrons]
+                grad = self.softmax_cross_entropy_gradient(y_true, y_pred)
+                #grad = y_pred - y_true # shape: [numberOfPerceptrons]
 
                 # prepara x com bias
                 x_bias = np.append(x, self.bias) # shape: [numberOfInputs + 1]
@@ -216,7 +218,12 @@ class PerceptronNetwork:
         save_path = './Reports/model.json'
         self.save_model(save_path)
 
-    
+    def cross_entropy(self, y_true, y_pred) -> float:
+        return -np.sum(y_true*np.log(y_pred+1e-15))
+
+    def softmax_cross_entropy_gradient(self, y_true, y_pred) -> np.ndarray:
+        return y_pred - y_true
+
     def test(self, test):
         ...
 
