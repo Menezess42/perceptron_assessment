@@ -428,12 +428,13 @@ class PerceptronNetwork:
         self.experiment1_testing_weightRange(train_data=train, val_data=val, test_data=test)
         self.experiment2_testing_learning_rate(train_data=train, val_data=val, test_data=test)
 
+
     def experiment1_testing_weightRange(
         self, train_data, val_data, test_data, report_path: str = "./Reports/"
     ):
         weights_vector = []
         weights_tests = []
-        fix_learning_rate = 0.1  # <== Defina aqui o valor que quiser
+        fix_learning_rate = 0.1
         a = [
             0.1,
             0.2,
@@ -445,81 +446,78 @@ class PerceptronNetwork:
             0.8,
             0.9,
             1.0,
-        ]  # removido o 0.5 duplicado
+        ]
+
+        total_weights = self.numberOfPerceptrons * (self.numberOfInputs + 1)
 
         for j in a:
-            for _ in range(self.numberOfInputs * self.numberOfInputs + 1):
+            for _ in range(total_weights):  # <=== Apenas esta linha foi corrigida
                 weights_tests.append(j)
-            weights_vector.append(weights_tests.copy())  # garante cópia independente
+            weights_vector.append(weights_tests.copy())
             weights_tests = []
 
         test_path = report_path + "test_1/"
         garante_pasta(test_path)
 
         for weights in weights_vector:
-            nome = str(weights[0]).replace(
-                ".", "_"
-            )  # evita problema com ponto no nome da pasta
+            nome = str(weights[0]).replace(".", "_")
             path = test_path + f"weights_{nome}/"
             garante_pasta(path)
-            self.weights = weights
+            self.weights = np.array(weights)
             self.train(
                 train=train_data,
                 val=val_data,
                 learning_rate=fix_learning_rate,
-                path=path + "train_report.json",
+                path=path,
             )
             self.test(
                 test_data=test_data,
-                model_path=f"{path}/model.path",
-                report_path=f"{path}/test_report.json",
+                model_path=f"{path}model.json",
+                report_path=f"{path}",
             )
+
+        # Teste com pesos aleatórios
         random_path = test_path + "weights_random/"
         garante_pasta(random_path)
-        self.weights = np.random.rand(
-            self.numberOfPerceptrons * (self.numberOfInputs + 1)
-        )
+        self.weights = np.random.rand(total_weights)
         self.train(
             train=train_data,
             val=val_data,
             learning_rate=fix_learning_rate,
-            path=random_path + "train_report.json",
+            path=random_path,
         )
-
         self.test(
             test_data=test_data,
-            model_path=f"{random_path}/model.path",
-            report_path=f"{random_path}/test_report.json",
+            model_path=f"{random_path}model.json",
+            report_path=f"{random_path}test_report.json",
         )
 
     def experiment2_testing_learning_rate(
         self, train_data, val_data, test_data, report_path: str = "./Reports/"
     ):
-        fix_learning_rates = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-        fix_weights = [0.5] * (self.numberOfInputs * self.numberOfInputs + 1)
+        learning_rates = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+        fix_weights = [0.5] * (self.numberOfPerceptrons * (self.numberOfInputs + 1))
 
         test_path = report_path + "test_2/"
         garante_pasta(test_path)
 
-        for lr in fix_learning_rates:
+        for lr in learning_rates:
             nome = str(lr).replace(".", "_")
             path = test_path + f"lr_{nome}/"
             garante_pasta(path)
 
-            self.weights = (
-                fix_weights.copy()
-            )  # Garante que os pesos são resetados para 0.5 a cada iteração
+            self.weights = np.array(fix_weights.copy())  # Garante que os pesos são resetados para 0.5 a cada iteração
 
             self.train(
                 train=train_data,
                 val=val_data,
                 learning_rate=lr,
-                path=path + "train_report.json",
+                path=path,
             )
             self.test(
                 test_data=test_data,
-                model_path=f"{path}/model.path",
-                report_path=f"{path}/test_report.json",
+                model_path=f"{path}/model.json",
+                report_path=f"{path}",
             )
 
 
