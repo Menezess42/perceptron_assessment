@@ -437,7 +437,8 @@ class PerceptronNetwork:
         fix_learning_rate = 0.1
         a = [
             0.1,
-            0.2, 0.3,
+            0.2,
+            0.3,
             0.4,
             0.5,
             0.6,
@@ -459,37 +460,39 @@ class PerceptronNetwork:
         garante_pasta(test_path)
 
         for weights in weights_vector:
-            nome = str(weights[0]).replace(".", "_")
-            path = test_path + f"weights_{nome}/"
-            garante_pasta(path)
-            self.weights = np.array(weights)
+            for i in range(10):
+                nome = str(weights[0]).replace(".", "_")
+                path = test_path + f"weights_{nome}/run_{i}/"
+                garante_pasta(path)
+                self.weights = np.array(weights)
+                self.train(
+                    train=train_data,
+                    val=val_data,
+                    learning_rate=fix_learning_rate,
+                    path=path,
+                )
+                self.test(
+                    test_data=test_data,
+                    model_path=f"{path}model.json",
+                    report_path=f"{path}",
+                )
+
+        # Teste com pesos aleatórios
+        for i in range(10):
+            random_path = test_path + f"weights_random/run_{i}/"
+            garante_pasta(random_path)
+            self.weights = np.random.rand(total_weights)
             self.train(
                 train=train_data,
                 val=val_data,
                 learning_rate=fix_learning_rate,
-                path=path,
+                path=random_path,
             )
             self.test(
                 test_data=test_data,
-                model_path=f"{path}model.json",
-                report_path=f"{path}",
+                model_path=f"{random_path}model.json",
+                report_path=f"{random_path}test_report.json",
             )
-
-        # Teste com pesos aleatórios
-        random_path = test_path + "weights_random/"
-        garante_pasta(random_path)
-        self.weights = np.random.rand(total_weights)
-        self.train(
-            train=train_data,
-            val=val_data,
-            learning_rate=fix_learning_rate,
-            path=random_path,
-        )
-        self.test(
-            test_data=test_data,
-            model_path=f"{random_path}model.json",
-            report_path=f"{random_path}test_report.json",
-        )
 
     def experiment2_testing_learning_rate(
         self, train_data, val_data, test_data, report_path: str = "./Reports/"
@@ -501,23 +504,24 @@ class PerceptronNetwork:
         garante_pasta(test_path)
 
         for lr in learning_rates:
-            nome = str(lr).replace(".", "_")
-            path = test_path + f"lr_{nome}/"
-            garante_pasta(path)
+            for i in range(10):
+                nome = str(lr).replace(".", "_")
+                path = test_path + f"lr_{nome}/run_{i}/"
+                garante_pasta(path)
 
-            self.weights = np.array(fix_weights.copy())  # Garante que os pesos são resetados para 0.5 a cada iteração
+                self.weights = np.array(fix_weights.copy())  # Garante que os pesos são resetados para 0.5 a cada iteração
 
-            self.train(
-                train=train_data,
-                val=val_data,
-                learning_rate=lr,
-                path=path,
-            )
-            self.test(
-                test_data=test_data,
-                model_path=f"{path}/model.json",
-                report_path=f"{path}",
-            )
+                self.train(
+                    train=train_data,
+                    val=val_data,
+                    learning_rate=lr,
+                    path=path,
+                )
+                self.test(
+                    test_data=test_data,
+                    model_path=f"{path}/model.json",
+                    report_path=f"{path}",
+                )
 
 
 def main():
