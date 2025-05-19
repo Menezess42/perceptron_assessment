@@ -21,6 +21,8 @@
           pandas
           scikit-learn
           seaborn
+          rich
+          prompt-toolkit
           ]);
 
           shellHook = ''

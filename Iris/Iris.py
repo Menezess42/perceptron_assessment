@@ -478,10 +478,10 @@ class PerceptronNetwork:
                 )
 
         # Teste com pesos aleatórios
+        self.weights = np.random.rand(total_weights)
         for i in range(10):
             random_path = test_path + f"weights_random/run_{i}/"
             garante_pasta(random_path)
-            self.weights = np.random.rand(total_weights)
             self.train(
                 train=train_data,
                 val=val_data,
