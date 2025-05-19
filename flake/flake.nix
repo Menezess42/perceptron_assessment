@@ -20,6 +20,7 @@
           # opencv4
           pandas
           scikit-learn
+          seaborn
           ]);
 
           shellHook = ''
