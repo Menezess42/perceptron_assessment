@@ -19,6 +19,7 @@
           buildInputs = baseShell.buildInputs ++ (with pkgs.python311Packages; [
           # opencv4
           pandas
+          scikit-learn
           ]);
 
           shellHook = ''
