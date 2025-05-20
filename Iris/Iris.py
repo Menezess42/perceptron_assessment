@@ -449,7 +449,6 @@ class PerceptronNetwork:
         ]
 
         total_weights = self.numberOfPerceptrons * (self.numberOfInputs + 1)
-
         for j in a:
             for _ in range(total_weights):  # <=== Apenas esta linha foi corrigida
                 weights_tests.append(j)
@@ -464,6 +463,7 @@ class PerceptronNetwork:
                 nome = str(weights[0]).replace(".", "_")
                 path = test_path + f"weights_{nome}/run_{i}/"
                 garante_pasta(path)
+                self.weights = []
                 self.weights = np.array(weights)
                 self.train(
                     train=train_data,
@@ -478,20 +478,21 @@ class PerceptronNetwork:
                 )
 
         # Teste com pesos aleatórios
-        self.weights = np.random.rand(total_weights)
+        w = np.random.rand(total_weights)
         for i in range(10):
+            self.weights = []
+            self.weights = w.copy()
             random_path = test_path + f"weights_random/run_{i}/"
             garante_pasta(random_path)
             self.train(
                 train=train_data,
                 val=val_data,
                 learning_rate=fix_learning_rate,
-                path=random_path,
-            )
+                path=random_path,)
             self.test(
                 test_data=test_data,
                 model_path=f"{random_path}model.json",
-                report_path=f"{random_path}test_report.json",
+                report_path=f"{random_path}",
             )
 
     def experiment2_testing_learning_rate(
