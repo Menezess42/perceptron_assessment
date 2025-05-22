@@ -23,6 +23,8 @@
           seaborn
           rich
           prompt-toolkit
+          tensorflow
+          # tensorflow-datasets
           ]);
 
           shellHook = ''
