@@ -1,0 +1,602 @@
+[
+    {
+        "epoch": 1,
+        "cross_entropy_loss": 0.204891,
+        "mse_loss": 0.026101,
+        "total_loss": 5.32716
+    },
+    {
+        "epoch": 2,
+        "cross_entropy_loss": 0.115057,
+        "mse_loss": 0.012949,
+        "total_loss": 2.991486
+    },
+    {
+        "epoch": 3,
+        "cross_entropy_loss": 0.083755,
+        "mse_loss": 0.009038,
+        "total_loss": 2.177619
+    },
+    {
+        "epoch": 4,
+        "cross_entropy_loss": 0.067495,
+        "mse_loss": 0.007085,
+        "total_loss": 1.754878
+    },
+    {
+        "epoch": 5,
+        "cross_entropy_loss": 0.057348,
+        "mse_loss": 0.005873,
+        "total_loss": 1.491055
+    },
+    {
+        "epoch": 6,
+        "cross_entropy_loss": 0.050311,
+        "mse_loss": 0.005029,
+        "total_loss": 1.308087
+    },
+    {
+        "epoch": 7,
+        "cross_entropy_loss": 0.045086,
+        "mse_loss": 0.004399,
+        "total_loss": 1.172243
+    },
+    {
+        "epoch": 8,
+        "cross_entropy_loss": 0.041019,
+        "mse_loss": 0.003907,
+        "total_loss": 1.066492
+    },
+    {
+        "epoch": 9,
+        "cross_entropy_loss": 0.037741,
+        "mse_loss": 0.00351,
+        "total_loss": 0.981257
+    },
+    {
+        "epoch": 10,
+        "cross_entropy_loss": 0.035028,
+        "mse_loss": 0.003182,
+        "total_loss": 0.910721
+    },
+    {
+        "epoch": 11,
+        "cross_entropy_loss": 0.032736,
+        "mse_loss": 0.002905,
+        "total_loss": 0.851129
+    },
+    {
+        "epoch": 12,
+        "cross_entropy_loss": 0.030767,
+        "mse_loss": 0.002669,
+        "total_loss": 0.799943
+    },
+    {
+        "epoch": 13,
+        "cross_entropy_loss": 0.029053,
+        "mse_loss": 0.002465,
+        "total_loss": 0.755379
+    },
+    {
+        "epoch": 14,
+        "cross_entropy_loss": 0.027544,
+        "mse_loss": 0.002286,
+        "total_loss": 0.716143
+    },
+    {
+        "epoch": 15,
+        "cross_entropy_loss": 0.026203,
+        "mse_loss": 0.002129,
+        "total_loss": 0.68127
+    },
+    {
+        "epoch": 16,
+        "cross_entropy_loss": 0.025001,
+        "mse_loss": 0.001989,
+        "total_loss": 0.650028
+    },
+    {
+        "epoch": 17,
+        "cross_entropy_loss": 0.023917,
+        "mse_loss": 0.001864,
+        "total_loss": 0.621843
+    },
+    {
+        "epoch": 18,
+        "cross_entropy_loss": 0.022933,
+        "mse_loss": 0.001752,
+        "total_loss": 0.596265
+    },
+    {
+        "epoch": 19,
+        "cross_entropy_loss": 0.022036,
+        "mse_loss": 0.001651,
+        "total_loss": 0.57293
+    },
+    {
+        "epoch": 20,
+        "cross_entropy_loss": 0.021213,
+        "mse_loss": 0.00156,
+        "total_loss": 0.551543
+    },
+    {
+        "epoch": 21,
+        "cross_entropy_loss": 0.020456,
+        "mse_loss": 0.001477,
+        "total_loss": 0.53186
+    },
+    {
+        "epoch": 22,
+        "cross_entropy_loss": 0.019757,
+        "mse_loss": 0.001401,
+        "total_loss": 0.513678
+    },
+    {
+        "epoch": 23,
+        "cross_entropy_loss": 0.019109,
+        "mse_loss": 0.001331,
+        "total_loss": 0.496827
+    },
+    {
+        "epoch": 24,
+        "cross_entropy_loss": 0.018506,
+        "mse_loss": 0.001268,
+        "total_loss": 0.481161
+    },
+    {
+        "epoch": 25,
+        "cross_entropy_loss": 0.017944,
+        "mse_loss": 0.001209,
+        "total_loss": 0.466557
+    },
+    {
+        "epoch": 26,
+        "cross_entropy_loss": 0.01742,
+        "mse_loss": 0.001154,
+        "total_loss": 0.452908
+    },
+    {
+        "epoch": 27,
+        "cross_entropy_loss": 0.016928,
+        "mse_loss": 0.001104,
+        "total_loss": 0.44012
+    },
+    {
+        "epoch": 28,
+        "cross_entropy_loss": 0.016466,
+        "mse_loss": 0.001058,
+        "total_loss": 0.428115
+    },
+    {
+        "epoch": 29,
+        "cross_entropy_loss": 0.016032,
+        "mse_loss": 0.001014,
+        "total_loss": 0.416821
+    },
+    {
+        "epoch": 30,
+        "cross_entropy_loss": 0.015622,
+        "mse_loss": 0.000974,
+        "total_loss": 0.406175
+    },
+    {
+        "epoch": 31,
+        "cross_entropy_loss": 0.015235,
+        "mse_loss": 0.000936,
+        "total_loss": 0.396122
+    },
+    {
+        "epoch": 32,
+        "cross_entropy_loss": 0.01487,
+        "mse_loss": 0.000901,
+        "total_loss": 0.386614
+    },
+    {
+        "epoch": 33,
+        "cross_entropy_loss": 0.014523,
+        "mse_loss": 0.000868,
+        "total_loss": 0.377607
+    },
+    {
+        "epoch": 34,
+        "cross_entropy_loss": 0.014195,
+        "mse_loss": 0.000837,
+        "total_loss": 0.369062
+    },
+    {
+        "epoch": 35,
+        "cross_entropy_loss": 0.013882,
+        "mse_loss": 0.000808,
+        "total_loss": 0.360943
+    },
+    {
+        "epoch": 36,
+        "cross_entropy_loss": 0.013585,
+        "mse_loss": 0.000781,
+        "total_loss": 0.353219
+    },
+    {
+        "epoch": 37,
+        "cross_entropy_loss": 0.013302,
+        "mse_loss": 0.000755,
+        "total_loss": 0.345862
+    },
+    {
+        "epoch": 38,
+        "cross_entropy_loss": 0.013033,
+        "mse_loss": 0.000731,
+        "total_loss": 0.338845
+    },
+    {
+        "epoch": 39,
+        "cross_entropy_loss": 0.012775,
+        "mse_loss": 0.000708,
+        "total_loss": 0.332146
+    },
+    {
+        "epoch": 40,
+        "cross_entropy_loss": 0.012529,
+        "mse_loss": 0.000687,
+        "total_loss": 0.325742
+    },
+    {
+        "epoch": 41,
+        "cross_entropy_loss": 0.012293,
+        "mse_loss": 0.000666,
+        "total_loss": 0.319615
+    },
+    {
+        "epoch": 42,
+        "cross_entropy_loss": 0.012067,
+        "mse_loss": 0.000647,
+        "total_loss": 0.313746
+    },
+    {
+        "epoch": 43,
+        "cross_entropy_loss": 0.011851,
+        "mse_loss": 0.000628,
+        "total_loss": 0.308119
+    },
+    {
+        "epoch": 44,
+        "cross_entropy_loss": 0.011643,
+        "mse_loss": 0.00061,
+        "total_loss": 0.30272
+    },
+    {
+        "epoch": 45,
+        "cross_entropy_loss": 0.011444,
+        "mse_loss": 0.000594,
+        "total_loss": 0.297534
+    },
+    {
+        "epoch": 46,
+        "cross_entropy_loss": 0.011252,
+        "mse_loss": 0.000578,
+        "total_loss": 0.292548
+    },
+    {
+        "epoch": 47,
+        "cross_entropy_loss": 0.011067,
+        "mse_loss": 0.000563,
+        "total_loss": 0.287753
+    },
+    {
+        "epoch": 48,
+        "cross_entropy_loss": 0.01089,
+        "mse_loss": 0.000548,
+        "total_loss": 0.283135
+    },
+    {
+        "epoch": 49,
+        "cross_entropy_loss": 0.010719,
+        "mse_loss": 0.000535,
+        "total_loss": 0.278686
+    },
+    {
+        "epoch": 50,
+        "cross_entropy_loss": 0.010554,
+        "mse_loss": 0.000521,
+        "total_loss": 0.274396
+    },
+    {
+        "epoch": 51,
+        "cross_entropy_loss": 0.010394,
+        "mse_loss": 0.000509,
+        "total_loss": 0.270256
+    },
+    {
+        "epoch": 52,
+        "cross_entropy_loss": 0.010241,
+        "mse_loss": 0.000497,
+        "total_loss": 0.266259
+    },
+    {
+        "epoch": 53,
+        "cross_entropy_loss": 0.010092,
+        "mse_loss": 0.000485,
+        "total_loss": 0.262397
+    },
+    {
+        "epoch": 54,
+        "cross_entropy_loss": 0.009949,
+        "mse_loss": 0.000474,
+        "total_loss": 0.258663
+    },
+    {
+        "epoch": 55,
+        "cross_entropy_loss": 0.00981,
+        "mse_loss": 0.000463,
+        "total_loss": 0.255051
+    },
+    {
+        "epoch": 56,
+        "cross_entropy_loss": 0.009675,
+        "mse_loss": 0.000453,
+        "total_loss": 0.251555
+    },
+    {
+        "epoch": 57,
+        "cross_entropy_loss": 0.009545,
+        "mse_loss": 0.000443,
+        "total_loss": 0.248169
+    },
+    {
+        "epoch": 58,
+        "cross_entropy_loss": 0.009419,
+        "mse_loss": 0.000434,
+        "total_loss": 0.244888
+    },
+    {
+        "epoch": 59,
+        "cross_entropy_loss": 0.009296,
+        "mse_loss": 0.000425,
+        "total_loss": 0.241706
+    },
+    {
+        "epoch": 60,
+        "cross_entropy_loss": 0.009178,
+        "mse_loss": 0.000416,
+        "total_loss": 0.23862
+    },
+    {
+        "epoch": 61,
+        "cross_entropy_loss": 0.009062,
+        "mse_loss": 0.000408,
+        "total_loss": 0.235625
+    },
+    {
+        "epoch": 62,
+        "cross_entropy_loss": 0.008951,
+        "mse_loss": 0.0004,
+        "total_loss": 0.232717
+    },
+    {
+        "epoch": 63,
+        "cross_entropy_loss": 0.008842,
+        "mse_loss": 0.000392,
+        "total_loss": 0.229891
+    },
+    {
+        "epoch": 64,
+        "cross_entropy_loss": 0.008736,
+        "mse_loss": 0.000384,
+        "total_loss": 0.227145
+    },
+    {
+        "epoch": 65,
+        "cross_entropy_loss": 0.008634,
+        "mse_loss": 0.000377,
+        "total_loss": 0.224475
+    },
+    {
+        "epoch": 66,
+        "cross_entropy_loss": 0.008534,
+        "mse_loss": 0.00037,
+        "total_loss": 0.221878
+    },
+    {
+        "epoch": 67,
+        "cross_entropy_loss": 0.008437,
+        "mse_loss": 0.000363,
+        "total_loss": 0.21935
+    },
+    {
+        "epoch": 68,
+        "cross_entropy_loss": 0.008342,
+        "mse_loss": 0.000356,
+        "total_loss": 0.21689
+    },
+    {
+        "epoch": 69,
+        "cross_entropy_loss": 0.00825,
+        "mse_loss": 0.00035,
+        "total_loss": 0.214493
+    },
+    {
+        "epoch": 70,
+        "cross_entropy_loss": 0.00816,
+        "mse_loss": 0.000344,
+        "total_loss": 0.212158
+    },
+    {
+        "epoch": 71,
+        "cross_entropy_loss": 0.008072,
+        "mse_loss": 0.000338,
+        "total_loss": 0.209882
+    },
+    {
+        "epoch": 72,
+        "cross_entropy_loss": 0.007987,
+        "mse_loss": 0.000332,
+        "total_loss": 0.207663
+    },
+    {
+        "epoch": 73,
+        "cross_entropy_loss": 0.007904,
+        "mse_loss": 0.000326,
+        "total_loss": 0.205499
+    },
+    {
+        "epoch": 74,
+        "cross_entropy_loss": 0.007823,
+        "mse_loss": 0.000321,
+        "total_loss": 0.203387
+    },
+    {
+        "epoch": 75,
+        "cross_entropy_loss": 0.007743,
+        "mse_loss": 0.000316,
+        "total_loss": 0.201326
+    },
+    {
+        "epoch": 76,
+        "cross_entropy_loss": 0.007666,
+        "mse_loss": 0.000311,
+        "total_loss": 0.199313
+    },
+    {
+        "epoch": 77,
+        "cross_entropy_loss": 0.00759,
+        "mse_loss": 0.000306,
+        "total_loss": 0.197348
+    },
+    {
+        "epoch": 78,
+        "cross_entropy_loss": 0.007516,
+        "mse_loss": 0.000301,
+        "total_loss": 0.195428
+    },
+    {
+        "epoch": 79,
+        "cross_entropy_loss": 0.007444,
+        "mse_loss": 0.000296,
+        "total_loss": 0.193551
+    },
+    {
+        "epoch": 80,
+        "cross_entropy_loss": 0.007374,
+        "mse_loss": 0.000292,
+        "total_loss": 0.191717
+    },
+    {
+        "epoch": 81,
+        "cross_entropy_loss": 0.007305,
+        "mse_loss": 0.000287,
+        "total_loss": 0.189923
+    },
+    {
+        "epoch": 82,
+        "cross_entropy_loss": 0.007237,
+        "mse_loss": 0.000283,
+        "total_loss": 0.188169
+    },
+    {
+        "epoch": 83,
+        "cross_entropy_loss": 0.007171,
+        "mse_loss": 0.000279,
+        "total_loss": 0.186452
+    },
+    {
+        "epoch": 84,
+        "cross_entropy_loss": 0.007107,
+        "mse_loss": 0.000275,
+        "total_loss": 0.184773
+    },
+    {
+        "epoch": 85,
+        "cross_entropy_loss": 0.007043,
+        "mse_loss": 0.000271,
+        "total_loss": 0.183128
+    },
+    {
+        "epoch": 86,
+        "cross_entropy_loss": 0.006981,
+        "mse_loss": 0.000267,
+        "total_loss": 0.181519
+    },
+    {
+        "epoch": 87,
+        "cross_entropy_loss": 0.006921,
+        "mse_loss": 0.000263,
+        "total_loss": 0.179942
+    },
+    {
+        "epoch": 88,
+        "cross_entropy_loss": 0.006861,
+        "mse_loss": 0.000259,
+        "total_loss": 0.178397
+    },
+    {
+        "epoch": 89,
+        "cross_entropy_loss": 0.006803,
+        "mse_loss": 0.000256,
+        "total_loss": 0.176884
+    },
+    {
+        "epoch": 90,
+        "cross_entropy_loss": 0.006746,
+        "mse_loss": 0.000252,
+        "total_loss": 0.1754
+    },
+    {
+        "epoch": 91,
+        "cross_entropy_loss": 0.00669,
+        "mse_loss": 0.000249,
+        "total_loss": 0.173946
+    },
+    {
+        "epoch": 92,
+        "cross_entropy_loss": 0.006635,
+        "mse_loss": 0.000246,
+        "total_loss": 0.172521
+    },
+    {
+        "epoch": 93,
+        "cross_entropy_loss": 0.006582,
+        "mse_loss": 0.000242,
+        "total_loss": 0.171122
+    },
+    {
+        "epoch": 94,
+        "cross_entropy_loss": 0.006529,
+        "mse_loss": 0.000239,
+        "total_loss": 0.169751
+    },
+    {
+        "epoch": 95,
+        "cross_entropy_loss": 0.006477,
+        "mse_loss": 0.000236,
+        "total_loss": 0.168405
+    },
+    {
+        "epoch": 96,
+        "cross_entropy_loss": 0.006426,
+        "mse_loss": 0.000233,
+        "total_loss": 0.167084
+    },
+    {
+        "epoch": 97,
+        "cross_entropy_loss": 0.006376,
+        "mse_loss": 0.00023,
+        "total_loss": 0.165788
+    },
+    {
+        "epoch": 98,
+        "cross_entropy_loss": 0.006328,
+        "mse_loss": 0.000227,
+        "total_loss": 0.164515
+    },
+    {
+        "epoch": 99,
+        "cross_entropy_loss": 0.006279,
+        "mse_loss": 0.000224,
+        "total_loss": 0.163266
+    },
+    {
+        "epoch": 100,
+        "cross_entropy_loss": 0.006232,
+        "mse_loss": 0.000222,
+        "total_loss": 0.162039
+    }
+]

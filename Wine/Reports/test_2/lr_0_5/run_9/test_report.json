@@ -1,0 +1,242 @@
+{
+    "avg_cross_entropy_loss": 0.092506,
+    "avg_mse_loss": 0.01872,
+    "accuracy": 0.923077,
+    "total_samples": 26,
+    "predictions": [
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                1.970747440037029e-08,
+                0.999999970276684,
+                1.0015841581549952e-08
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.9999999019943105,
+                3.559924228756396e-11,
+                9.797009015356182e-08
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 1,
+            "probabilidades": [
+                0.0016191518290200203,
+                0.5301349579660573,
+                0.4682458902049228
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 2,
+            "probabilidades": [
+                2.1093854681307263e-06,
+                5.661281410542561e-08,
+                0.9999978340017177
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                4.4051807141770887e-08,
+                0.9999994971256294,
+                4.5882256342310403e-07
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.999990101096918,
+                9.702592246809327e-06,
+                1.9631083519127383e-07
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 2,
+            "probabilidades": [
+                0.00023494035469581463,
+                0.07989033572056534,
+                0.9198747239247388
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.42842941470638596,
+                0.2684554367634771,
+                0.30311514853013705
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 2,
+            "probabilidades": [
+                8.751680154130408e-07,
+                0.00815358773006749,
+                0.9918455371019171
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                0.00022125126056628694,
+                0.9995379972484421,
+                0.0002407514909918662
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.9974901192885353,
+                0.0025090128770073068,
+                8.678344574467383e-07
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                4.7448749418504166e-05,
+                0.9999335590223151,
+                1.899222826644259e-05
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 2,
+            "probabilidades": [
+                0.0071424540131509685,
+                0.00024719936740645945,
+                0.9926103466194427
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                0.00015591477806479426,
+                0.999844028700009,
+                5.652192634494738e-08
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.9999808959672872,
+                1.8704311237670662e-05,
+                3.9972147510331815e-07
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                8.301432816329855e-07,
+                0.9999991607187969,
+                9.137921389986428e-09
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 2,
+            "probabilidades": [
+                0.009807601902979983,
+                0.008130020590790564,
+                0.9820623775062295
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                1.338496970748257e-05,
+                0.9999864219611985,
+                1.930690938894552e-07
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.8099066752012558,
+                0.19006859796730968,
+                2.472683143448789e-05
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                1.6205977655103298e-06,
+                0.9999983760377562,
+                3.3644784360038884e-09
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                1.9802436298627627e-06,
+                0.9999979906068315,
+                2.9149538506742928e-08
+            ]
+        },
+        {
+            "true_class": 2,
+            "predicted_class": 2,
+            "probabilidades": [
+                4.968663136097211e-06,
+                4.687200606478368e-09,
+                0.9999950266496632
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.9999999997832398,
+                2.0044493268617574e-11,
+                1.9671583272164376e-10
+            ]
+        },
+        {
+            "true_class": 1,
+            "predicted_class": 1,
+            "probabilidades": [
+                5.562005130522981e-06,
+                0.9999944270556521,
+                1.093921745604184e-08
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.999999989506516,
+                1.0399572716372515e-08,
+                9.391136674719128e-11
+            ]
+        },
+        {
+            "true_class": 0,
+            "predicted_class": 0,
+            "probabilidades": [
+                0.9999881413551656,
+                5.637807963501141e-07,
+                1.129486403814019e-05
+            ]
+        }
+    ]
+}
