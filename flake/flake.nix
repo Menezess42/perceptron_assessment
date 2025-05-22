@@ -24,7 +24,7 @@
           rich
           prompt-toolkit
           tensorflow
-          # tensorflow-datasets
+          keras
           ]);
 
           shellHook = ''
