@@ -130,7 +130,7 @@ class Analyzer_test_1:
 class Analyzer_test_2:
     """
     Classe responsável por criar o dataFrame para o experimento 2.
-    Ou seja, classe responsável por ler os .json de test_1 e transformar em dataFrame.
+    Ou seja, classe responsável por ler os .json de test_2 e transformar em dataFrame.
     """
     def __init__(self, base_dir="./Reports/test_2/"):
         """

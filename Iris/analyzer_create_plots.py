@@ -39,7 +39,6 @@ class Analyzer_test_1:
         acc_std = grouped_sorted[("accuracy", "std")]
         loss_mean = grouped_sorted[("avg_cross_entropy_loss", "mean")]
         loss_std = grouped_sorted[("avg_cross_entropy_loss", "std")]
-        # → Forçar os valores do eixo Y
         y_ticks_acc = np.round(np.unique(np.concatenate([acc_mean, np.linspace(acc_mean.min(), acc_mean.max(), 5)])), 5)
         y_ticks_loss = np.round(np.unique(np.concatenate([loss_mean, np.linspace(loss_mean.min(), loss_mean.max(), 5)])), 5)
 
@@ -61,7 +60,7 @@ class Analyzer_test_1:
         plt.xlabel("Pesos iniciais (weight_init)")
         plt.ylabel("Loss média")
         plt.xticks(rotation=45)
-        plt.yticks(y_ticks_loss)  # <–– AQUI
+        plt.yticks(y_ticks_loss) 
         plt.grid(True)
 
         plt.tight_layout()
@@ -176,7 +175,6 @@ class Analyzer_test_2:
         plt.xlabel("Learning Rate")
         plt.ylabel("Loss média")
         plt.xticks(rotation=45)
-        #plt.yticks(y_ticks_loss)
         plt.grid(True)
 
         plt.tight_layout()
@@ -226,10 +224,10 @@ class Analyzer_test_2:
             print(f"Matriz de confusão salva: {filename}")
 
 def main():
-    # df = pd.read_pickle("./Reports/reports_test_1/compiled_data.pkl")
-    # a = Analyzer_test_1(df=df)
-    # a.plot_stability_vs_weight_init()
-    # a.plot_confusion_subplots_by_weight()
+    df1 = pd.read_pickle("./Reports/reports_test_1/compiled_data.pkl")
+    a1 = Analyzer_test_1(df=df1)
+    a1.plot_stability_vs_weight_init()
+    a1.plot_confusion_subplots_by_weight()
     df2 = pd.read_pickle("./Reports/reports_test_2/compiled_data_test_2.pkl")
     a2 = Analyzer_test_2(df=df2)
     a2.plot_stability_vs_lr()
